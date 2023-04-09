@@ -9,7 +9,7 @@ node('linux')
     stage('Build_Image'){
 
             sh "docker build -t babaknasrolahy/nginxapp:latest ."
-            sh "echo babak1380 | sudo -S chmod +x pusher.sh"
+            sh "echo babak13830 | sudo -S chmod +x pusher.sh"
             sh "./pusher.sh"
             stash "COPY"
             input message:"would you like to continue??"
