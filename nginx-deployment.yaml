@@ -23,11 +23,11 @@ spec:
           image: babaknasrolahy/nginxapp:latest
           ports:
            - containerPort: 80
-      resources:
-        limits:
-          cpu: 100m
-        requests:
-          cpu: 50m
+          resources:
+          limits:
+            cpu: 100m
+          requests:
+            cpu: 50m
         
 ---
 apiVersion: v1
