@@ -1,0 +1,1 @@
+docker push babaknasrolahy/nginxapp:latest
