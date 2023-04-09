@@ -28,3 +28,20 @@ spec:
         cpu: 100m
       requests:
         cpu: 50m
+        
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+
+spec:
+  type: LoadBalancer
+  selector:
+    app: nginxapp
+  
+  ports:
+   - protocol: TCP
+     port: 80
+     targetPort: 80
+     nodePort: 30000
