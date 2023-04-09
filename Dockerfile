@@ -3,4 +3,4 @@ FROM nginx:latest
 WORKDIR /app
 COPY ./app/ .
 
-ENTRYPOINT ["bash", "starter.sh"]
+CMD ["bash", "starter.sh"]
