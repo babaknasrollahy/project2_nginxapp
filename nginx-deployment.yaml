@@ -24,10 +24,10 @@ spec:
           ports:
            - containerPort: 80
           resources:
-          limits:
-            cpu: 100m
+            limits:
+              cpu: 100m
           requests:
-            cpu: 50m
+              cpu: 50m
         
 ---
 apiVersion: v1
