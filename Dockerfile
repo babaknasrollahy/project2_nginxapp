@@ -3,5 +3,6 @@ FROM nginx:latest
 WORKDIR /app
 COPY ./app/ .
 
-RUN bash starter.sh
+CMD [ "bash" , "starter.sh" ]
+ENTRYPOINT [ "bash", "/docker-entrypoint.sh" ]
 
