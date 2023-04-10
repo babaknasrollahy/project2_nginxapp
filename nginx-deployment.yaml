@@ -21,6 +21,7 @@ spec:
       containers:
         - name: nginx-container 
           image: babaknasrolahy/nginxapp:latest
+          imagePullPolicy: Always
           ports:
            - containerPort: 80
           resources:
