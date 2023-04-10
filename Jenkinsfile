@@ -20,7 +20,7 @@ node('master')
 {
     stage('Deploy_nginx_Applicaton'){
         unstash "COPY"
-        sh "echo babak13830 | sudo -S su -c 'kubectl create -f nginx-deployment.yaml' babak"
+        sh "echo babak13830 | sudo -S su -c 'kubectl apply -f nginx-deployment.yaml' babak"
     }
 
 
